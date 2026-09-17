@@ -3,7 +3,9 @@ import PyPDF2
 from tkinter.filedialog import askopenfilename
 
 book = askopenfilename()
+import os
 
+os.startfile(book)
 pdfreader = PyPDF2.PdfReader(book)
 
 pages = len(pdfreader.pages)
